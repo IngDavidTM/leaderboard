@@ -87,3 +87,7 @@ input::placeholder {
 .submitBtn {
   align-self: flex-end;
 }
+
+.error {
+  padding: 100px;
+}
