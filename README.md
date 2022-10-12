@@ -28,7 +28,7 @@ $git clone git@github.com:IngDavidTM/leaderboard.git
 ```
 
 ### Live GitHub Page
-- N/A
+- https://ingdavidtm.github.io/leaderboard/dist/
 
 ## Authors
 
