@@ -26,6 +26,10 @@ module.exports = {
             outputPath: "imgs"
           }
         }
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ]
   },
