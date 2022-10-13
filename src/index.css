@@ -10,7 +10,6 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  justify-content: center;
 }
 
 .container {
@@ -22,6 +21,7 @@ body {
   align-items: center;
   width: 90%;
   max-width: 900px;
+  margin: 20px 0;
 }
 
 h1 {
@@ -109,6 +109,12 @@ table {
 
 tr {
   width: 100%;
+  cursor: pointer;
+}
+
+tr:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
 
 td {
@@ -158,4 +164,53 @@ input:hover {
 .error {
   padding: 20px;
   color: #7c3333;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: left;
+    animation-name: head;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes head {
+    12% {
+      color: #aeb644;
+    }
+
+    25% {
+      color: #b06149;
+    }
+
+    37% {
+      color: #337c76;
+    }
+
+    50% {
+      font-size: 64px;
+      color: #33447c;
+    }
+
+    62% {
+      color: #33507c;
+    }
+
+    75% {
+      color: #61337c;
+    }
+
+    87% {
+      color: #7c3333;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+  }
 }
