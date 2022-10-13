@@ -157,10 +157,6 @@ input:hover {
   transition-duration: 0.5s;
 }
 
-.submitBtn {
-  align-self: flex-end;
-}
-
 .error {
   padding: 20px;
   color: #7c3333;
@@ -212,5 +208,9 @@ input:hover {
 
   h2 {
     font-size: 40px;
+  }
+
+  .submitBtn {
+    align-self: flex-end;
   }
 }
