@@ -5,20 +5,70 @@
 }
 
 body {
+  background-image: url(https://img.freepik.com/premium-photo/green-grass-background-football-field_41969-2262.jpg?w=1480);
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
 }
 
+.container {
+  background-color: rgba(255, 255, 255, 0.658);
+  backdrop-filter: blur(3px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px 0;
+}
+
 h1 {
   width: 90%;
   margin: 60px;
-  font-size: 60px;
+  font-size: 50px;
+  text-align: center;
+  color: #86b049;
+  animation-name: head;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes head {
+  12% {
+    color: #aeb644;
+  }
+
+  25% {
+    color: #b06149;
+  }
+
+  37% {
+    color: #337c76;
+  }
+
+  50% {
+    font-size: 53px;
+    color: #33447c;
+  }
+
+  62% {
+    color: #33507c;
+  }
+
+  75% {
+    color: #61337c;
+  }
+
+  87% {
+    color: #7c3333;
+  }
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
+  color: #476930;
 }
 
 section {
@@ -36,28 +86,44 @@ section {
 
 button {
   background: none;
-  padding: 3px 14px;
-  border: 2px solid #000;
+  border: none;
+  padding: 14px 14px;
+  background-color: #f1dddf70;
+  border-radius: 25px;
+  color: #476930;
   cursor: pointer;
-  box-shadow: 2px 2px 2px #000;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #86b049;
+  transition-duration: 0.5s;
 }
 
 table {
-  border: 3px solid #000;
+  border: 3px solid #476930;
   width: 100%;
   margin-top: 20px;
+  border-radius: 6px;
 }
 
 tr {
   width: 100%;
+  cursor: pointer;
+}
+
+tr:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
 
 td {
   padding: 2px 0 2px 8px;
+  color: #476930;
 }
 
 .gray {
-  background-color: #ccc;
+  background-color: #c8b88ac9;
 }
 
 .addForm {
@@ -76,18 +142,75 @@ form {
 input {
   width: 100%;
   height: 30px;
-  border: 2px solid #000;
+  border: 2px solid #476930;
   padding-left: 10px;
+  border-radius: 6px;
+  background-color: #f1dddf;
 }
 
 input::placeholder {
-  color: #000;
+  color: #476930;
 }
 
-.submitBtn {
-  align-self: flex-end;
+input:hover {
+  transform: scale(1.02);
+  transition-duration: 0.5s;
 }
 
 .error {
-  padding: 100px;
+  padding: 20px;
+  color: #7c3333;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: left;
+    animation-name: head;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes head {
+    12% {
+      color: #aeb644;
+    }
+
+    25% {
+      color: #b06149;
+    }
+
+    37% {
+      color: #337c76;
+    }
+
+    50% {
+      font-size: 64px;
+      color: #33447c;
+    }
+
+    62% {
+      color: #33507c;
+    }
+
+    75% {
+      color: #61337c;
+    }
+
+    87% {
+      color: #7c3333;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .submitBtn {
+    align-self: flex-end;
+  }
 }
