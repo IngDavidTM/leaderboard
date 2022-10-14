@@ -4,7 +4,7 @@ const addName = async (user, score) => {
     error.innerHTML = 'Please fill all the required fields';
     setTimeout(() => { error.innerHTML = ''; }, 3000);
   } else {
-    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/4tfml0QLmgKTloHBYIf5/scores/', {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EhAaWXgLWuShjKIQU3Yk/scores/', {
       method: 'POST',
       body: JSON.stringify({
         user,
