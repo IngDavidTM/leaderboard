@@ -1,7 +1,7 @@
 const table = document.getElementById('table');
 
 const setName = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/EhAaWXgLWuShjKIQU3Yk/scores/');
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/yySF9tpxm64KsoDIlbes/scores/');
   const json = await response.json();
   const jsonSort = json.result.sort((a, b) => b.score - a.score);
   table.innerHTML = '';
